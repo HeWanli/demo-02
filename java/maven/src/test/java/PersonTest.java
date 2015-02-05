@@ -11,6 +11,6 @@ public class PersonTest {
         Person zhangsan = new Person("zhangsan",10,4);
         Person lisi = new Person("lisi",10,4);
         zhangsan.fight(lisi);
-        assertThat(lisi.getBlood()).isNotEqualTo(6);
+        assertThat(lisi.getBlood()).isEqualTo(6);
     }
 }

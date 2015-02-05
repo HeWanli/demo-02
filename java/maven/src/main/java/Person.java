@@ -13,7 +13,7 @@ public class Person {
     }
 
     public void fight(Person lisi){
-        lisi.setBlood(lisi.getHurt()-lisi.getBlood());
+        lisi.setBlood(lisi.getBlood()-this.hurt);
     }
 
     public String getName() {
@@ -41,6 +41,12 @@ public class Person {
     }
 
     public boolean isAlive() {
-        return true;
+        if(this.blood > 0){
+            return true;
+        }
+        if(this.blood == 0 || this.blood < 0){
+            return false;
+        }
+        return false;
     }
 }
