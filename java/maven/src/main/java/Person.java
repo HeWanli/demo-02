@@ -24,29 +24,11 @@ public class Person {
         return blood;
     }
 
-    public int getHurt() {
-        return hurt;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setHurt(int hurt) {
-        this.hurt = hurt;
-    }
-
     public void setBlood(int blood) {
         this.blood = blood;
     }
 
     public boolean isAlive() {
-        if(this.blood > 0){
-            return true;
-        }
-        if(this.blood == 0 || this.blood < 0){
-            return false;
-        }
-        return false;
+        return this.blood>0;
     }
 }
