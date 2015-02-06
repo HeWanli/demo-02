@@ -17,11 +17,12 @@ public class FightUtils {
                 out.println(zhangsan.getName()+"被打败了.");
                 break;
             }
-            zhangsan.fight(lisi);
+            out.println(zhangsan.fight(lisi));
             if(!lisi.isAlive()){
                 out.println(lisi.getName()+"被打败了.");
+                break;
             }
-            lisi.fight(zhangsan);
+            out.println(lisi.fight(zhangsan));
         }
     }
 }

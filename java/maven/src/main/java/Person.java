@@ -12,8 +12,10 @@ public class Person {
         this.hurt = hurt;
     }
 
-    public void fight(Person lisi){
+    public String fight(Person lisi){
         lisi.setBlood(lisi.getBlood()-this.hurt);
+        return this.name+"攻击了"+lisi.getName()+",李四受到了"+this.hurt
+                +"点伤害,剩余生命:"+lisi.getBlood();
     }
 
     public String getName() {
